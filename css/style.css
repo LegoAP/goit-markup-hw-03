@@ -216,9 +216,6 @@ address {
 
 
 /*================= TITLE =================*/
-.colums {
-    margin-right: 24px;
-}
 
 .title {
     font-family: "Roboto" sans-serif;
@@ -227,8 +224,7 @@ address {
 
 .title-menu {
     display: flex;
-    padding-left: 16px;
-    padding-right: 16px;
+    gap: 24px;
 }
 
 .title-menu-link {
@@ -355,6 +351,13 @@ address {
     flex-shrink: 0;
 }
 
+.portfolio-menu-list {
+    width: calc((100% - 48px) / 3);
+    display: flex;
+    border: 1px solid #e7e9fc;
+    background: #FFF;
+}
+
 .portfolio-memu-name-descr {
     display: flex;
     padding: 32px 16px;
@@ -366,13 +369,7 @@ address {
     border: 1px solid #e7e9fc;
 }
 
-.portfolio-menu-list {
-    display: flex;
-    border: 1px solid #e7e9fc;
-    background: #FFF;
-}
-
-.portfolio-name {
+.portfolio-name-structure {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
@@ -381,7 +378,7 @@ address {
     margin-bottom: 8px;
 }
 
-.portfolio-descr {
+.portfolio-descr-structure {
     color: #434455;
     font-size: 16px;
     font-weight: 400;
