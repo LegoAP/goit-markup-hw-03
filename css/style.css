@@ -64,12 +64,12 @@ address {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.container-nav-info {
+.page-nav-info {
     display: flex;
     justify-content: space-between;
 }
 
-.page-nav {
+.page-header-nav {
     display: flex;
     align-items: center;
 }
@@ -168,6 +168,19 @@ address {
     padding: 188px 0px;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
 .heroy-container-title {
     color: #FFF;
     text-align: center;
@@ -222,7 +235,7 @@ address {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4));
 }
 
 
@@ -325,6 +338,8 @@ address {
 .portfolio-menu {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .portfolio-menu-list {
@@ -336,6 +351,10 @@ address {
     width: calc((100% - 48px) / 3);
 }
 
+.portfolio-menu-list-img {
+    flex-shrink: 0;
+}
+
 .portfolio-memu-name-descr {
     display: flex;
     padding: 32px 16px;
@@ -344,14 +363,13 @@ address {
     align-items: flex-start;
     align-self: stretch;
     border-top: none;
+    border: 1px solid #e7e9fc;
 }
 
 .portfolio-menu-list {
     display: flex;
     border: 1px solid #e7e9fc;
     background: #FFF;
-    row-gap: 48px;
-    column-gap: 24px;
 }
 
 .portfolio-name {
@@ -411,7 +429,7 @@ address {
     letter-spacing: 0.02em;
 }
 
-.end-page-small {
+.end-page-small-title {
     max-width: 264px;
     flex-shrink: 0;
 }
