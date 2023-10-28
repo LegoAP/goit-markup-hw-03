@@ -61,7 +61,6 @@ address {
 }
 
 .page-header {
-    display: block;
     border-bottom: 1px solid #e7e9fc;
 }
 
@@ -99,12 +98,11 @@ address {
 .page-nav-menu {
     display: flex;
     gap: 40px;
+    padding: 24px 0px;
     margin: 0px;
 }
 
-.page-nav-menu-item {
-    padding: 24px 0;
-}
+.page-nav-menu-item {}
 
 .page-nav-menu-link {
     color: #2E2F42;
