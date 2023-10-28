@@ -5,12 +5,39 @@ body {
     font-size: 18px;
 }
 
-ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     list-style-type: none;
+}
+
+img {
+    display: block;
+}
+
+address {
+    font-style: normal;
 }
 
 button {
     cursor: pointer;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .list {
@@ -21,9 +48,29 @@ button {
     text-decoration: none;
 }
 
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 /* ================= HEADER =================*/
 address {
     font-style: normal;
+}
+
+.page-header {}
+
+.container-nav-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
 }
 
 .logotype {
@@ -34,6 +81,7 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logotype-span {
@@ -46,6 +94,11 @@ address {
     text-transform: uppercase;
 }
 
+.menu {
+    display: flex;
+    column-gap: 40px;
+}
+
 
 .menu-link {
     color: #2E2F42;
@@ -54,6 +107,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
 
 .menu-link:hover,
 .menu-link:focus {
@@ -67,7 +121,13 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: flex;
 }
+
+.info-mail {
+    margin-right: 40px;
+}
+
 
 
 .mail-tel {
@@ -84,6 +144,9 @@ address {
 .mail-tel:focus {
     color: #404bbf;
 }
+
+
+
 
 
 
@@ -122,9 +185,29 @@ address {
 
 
 /*================= TITLE =================*/
+.colums {
+    margin-right: 24px;
+}
+
 .title {
     font-family: "Roboto" sans-serif;
+    flex-shrink: 0;
 }
+
+.title-menu {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.title-menu-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 264px;
+}
+
 
 .title-menu-name {
     color: #2E2F42;
@@ -159,6 +242,26 @@ address {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.people {
+    display: flex;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.card-people-plate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .card-people-name {
@@ -169,6 +272,8 @@ address {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    margin-top: 32px;
 }
 
 .card-people-skils {
@@ -178,6 +283,7 @@ address {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 /*================= /CADR =================== */
@@ -186,6 +292,55 @@ address {
 /*================= PORTFOLIO ==========================*/
 .header-portfolio {
     line-height: 1.11;
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.portfolio-menu {
+    display: flex;
+    width: 360px;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    flex-shrink: 0;
+}
+
+.portfolio-menu-list {
+    display: flex;
+    width: 360px;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+}
+
+.portfolio-memu-name-descr {
+    display: flex;
+    padding: 0px 16px 32px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.portfolio-row {
+    display: flex;
+
+}
+
+.portfolio-menu-list {
+    border: 1px solid #E7E9FC;
+    background: #FFF;
+    row-gap: 24px;
+    ;
 }
 
 .portfolio-name {
@@ -204,13 +359,7 @@ address {
     letter-spacing: 0.02em;
 }
 
-.small {
-    color: #F4F4FD;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
+
 
 /*================= /PORTFOLIO ==========================*/
 
@@ -221,6 +370,7 @@ address {
 }
 
 .logotype-end {
+    display: flex;
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -239,7 +389,18 @@ address {
     text-transform: uppercase;
 }
 
+.small {
+    color: #F4F4FD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
 
+.end-page-small {
+    width: 264px;
+    flex-shrink: 0;
+}
 
 
 
