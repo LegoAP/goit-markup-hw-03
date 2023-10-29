@@ -352,7 +352,9 @@ address {
     width: calc((100% - 48px) / 3);
 }
 
-.portfolio-menu-list-img {}
+.portfolio-menu-list-img {
+    max-width: 100%;
+}
 
 
 .portfolio-memu-name-descr {
