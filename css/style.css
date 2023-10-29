@@ -323,6 +323,10 @@ address {
 
 
 /*================= PORTFOLIO ==========================*/
+.portfolio {
+    border-top: none;
+}
+
 .header-portfolio {
     line-height: 1.11;
     color: #2E2F42;
