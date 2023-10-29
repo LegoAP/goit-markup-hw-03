@@ -369,7 +369,6 @@ address {
     align-items: flex-start;
     align-self: stretch;
     border-top: none;
-    border: 1px solid #e7e9fc;
 }
 
 .portfolio-name-structure {
