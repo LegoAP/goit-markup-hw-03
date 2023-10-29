@@ -231,9 +231,6 @@ address {
 }
 
 .title-menu-link {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     width: calc((100% - 72px) / 4);
 }
 
