@@ -345,7 +345,7 @@ address {
     column-gap: 24px;
 }
 
-.portfolio-menu-list {
+.portfolio-menu-link {
     display: flex;
     padding-bottom: 0px;
     flex-direction: column;
