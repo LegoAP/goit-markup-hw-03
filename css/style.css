@@ -211,6 +211,8 @@ address {
 .title {
     font-family: "Roboto" sans-serif;
     flex-shrink: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .visually-hidden {
