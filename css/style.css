@@ -230,7 +230,7 @@ address {
     gap: 24px;
 }
 
-.title-menu-link {
+.title-menu .title-menu-link {
     width: calc((100% - 72px) / 4);
 }
 
